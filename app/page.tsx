@@ -213,6 +213,9 @@ export default function Home() {
                         size="sm"
                         onClick={() => setCurrentPage(pageNum)}
                         className="w-10 text-gray-700 border-gray-300 hover:bg-gray-50"
+                        style={
+                          currentPage === pageNum ? { color: "white" } : {}
+                        }
                       >
                         {pageNum}
                       </Button>
